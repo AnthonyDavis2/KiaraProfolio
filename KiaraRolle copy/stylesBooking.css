@@ -31,6 +31,10 @@ body {
     padding-right: 1.66%;
 }
 
+.jumpTo { 
+    color: white;
+    text-decoration: none; 
+}
 
 .extraSpace { 
     width: 100%; 
