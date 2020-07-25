@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Perfect Match</title>
+        <link rel="stylesheet" type="text/css" href="stylesGallery.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <script type="text/javascript">
+var message="Right-click has been disabled";
+function clickIE() {
+    if (document.all) {
+        (message);
+        return false;
+    }
+}
+function clickNS(e) {
+    if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2||e.which == 3) {
+            (message);
+            return false;
+        }
+    }
+}
+if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = clickNS;
+} else {
+    document.onmouseup = clickNS;
+    document.oncontextmenu = clickIE;
+}
+document.oncontextmenu = new Function("return false");
+document.getElementsByClassName('my-img').ondragstart = function() { return false; };
+</script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container kiFont">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demoNavDrop" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+                    <a href="home.html" class="navbar-brand"><img src="pictures/logo.PNG" height="25"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="demoNavDrop">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                        <li class="active"><a href="gallery.html">Gallery <i class="far fa-images"></i></a></li>
+                         <li><a href="bookings.html">Bookings <i class="far fa-calendar-check"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container mkWhite">
+            <div class="jumbotron">
+                <h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+                <p>Taking an image, freezing a moment, reveals how rich reality truly is</p>
+            </div>
+       
+            <div class="row flex">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/2B81E2DF-F3A4-46DB-B06D-2D6EB0DEEFBB.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/3DC3D087-E797-4998-82F6-AA8060E5CBAA.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/F207B8C5-2DD5-4771-A034-6EE54CCA506A.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_0949.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_0966.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_0967.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2383.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2612.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2893.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2921.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2927.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2935.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2940.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2941.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2965.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2970.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2973.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2977.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2977.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_2981.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_4364.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="pictures/allPIctures/IMG_4378.jpeg">
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+</html>

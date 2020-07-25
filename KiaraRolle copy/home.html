@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Perfect Match</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <script type="text/javascript">
+var message="Right-click has been disabled";
+function clickIE() {
+    if (document.all) {
+        (message);
+        return false;
+    }
+}
+function clickNS(e) {
+    if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2||e.which == 3) {
+            (message);
+            return false;
+        }
+    }
+}
+if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = clickNS;
+} else {
+    document.onmouseup = clickNS;
+    document.oncontextmenu = clickIE;
+}
+document.oncontextmenu = new Function("return false");
+document.getElementsByClassName('my-img').ondragstart = function() { return false; };
+</script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container kiFont">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demoNavDrop" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+                    <a href="home.html" class="navbar-brand"><img src="pictures/logo.PNG" height="25"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="demoNavDrop">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                        <li><a href="gallery.html">Gallery <i class="far fa-images"></i></a></li>
+                         <li><a href="bookings.html">Bookings <i class="far fa-calendar-check"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container kiFont">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="content">
+                        <h1 class="mkWhite h1Size">Kaptured By Ki</h1>
+                        <h3 class="mkWhite">Atlanta based photographer</h3>
+                        <hr>
+                        <a href="https://kapturedbyki.as.me/schedule.php" class="btnGetBooked" title="Book Appointment"><button id="btnColor" class="btn btn-defualt btn-lg" title="Book Appointment">Booking!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="pushDown">
+            <div class="row">
+                <div class="container kiFont">
+                    <div class="col-md-6" id="avi">
+                        <img src="pictures/personOfInterest.jpeg" title="Kaptured By Ki Founder/Creater" class="personInPic">
+                        <br>
+                        <h1 class="contacts"><a href="https://instagram.com/_kapturedbyki?igshid=13rvqpkptzmo4"><i class="fab fa-instagram" title="Follow Me On Instagram!"></i></a></h1>
+                    </div>
+                    <div class="col-md-6">
+                         <h3>Hi my name is Kiara and I grew up in Miami, Florida but I currently live on the outskirts of Atlanta, Georgia. I have a lot of love and passion for creating, but photography became a part of that at the end of 2017, beginning of 2018 and I haven’t stopped since.</h3>
+                        <h3>It started out with just a point and shoot Kodak camera I got for Christmas when I was younger, then iPhone pictures with the typical editing apps to my very first DSLR camera, a Canon t3i. I bought the camera for my youtube videos, but then I wanted pictures of myself, and since no one was around to take the pictures for me, I took them myself. Not shortly after, I fell in love with the process and wanted to take pictures of someone other than myself, for once.</h3>
+                        <h3>My favorite thing about photography is that I am able to capture milestones, the love and happiness between two people, and pretty much anything and everything about portraits.</h3>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        
+        <div class="container extraSpace">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+            </div>
+        </div>
+        
+         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+</html>
